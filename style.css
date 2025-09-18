@@ -1,0 +1,274 @@
+/*
+    Capital Consultancy Services Group - style.css
+    This file contains all the custom CSS for the website to ensure a cohesive and professional look.
+*/
+
+/* Define custom properties for color palette */
+:root {
+    --gold: #FFC107; /* Vibrant gold */
+    --navy-blue: #0A192F; /* Deep navy blue */
+    --light-gray: #f0f0f0; /* Soft gray for backgrounds */
+    --mid-gray: #e5e7eb; /* Slightly darker gray */
+}
+
+/* Base body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy-blue);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+}
+
+/* Headings and lists */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Navigation bar */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 40;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-links {
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon {
+    z-index: 50;
+}
+
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Desktop Menu Specific Styles */
+@media (min-width: 768px) {
+    .logo-desktop {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Hero sections background images */
+.hero-bg, .hero-bg-services {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 4rem; /* To push content below the fixed nav */
+}
+
+.hero-bg {
+    background-image: url('home_background.jpg');
+}
+
+.hero-bg-services {
+    background-image: url('services_background.jpg');
+}
+
+.hero-bg::before,
+.hero-bg-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-bg > *,
+.hero-bg-services > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section background colors */
+.bg-light-section {
+    background-color: var(--light-gray);
+    color: var(--navy-blue);
+}
+
+.bg-dark-section {
+    background-color: var(--navy-blue);
+    color: white;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--gold);
+    color: var(--navy-blue);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f7d16a;
+}
+
+/* Shared Card & Box Styles */
+.card-hover-effect {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--gold);
+}
+
+/* Specific styling for the Loan Consultancy section on services.html */
+.loan-consultancy-heading {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Updated styling to ensure the rupee icon and text stack properly on mobile */
+.loan-consultancy-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.rupee-icon {
+    color: #00FF00; /* Shiny green */
+    font-size: 16rem; /* Scaled down for mobile */
+    line-height: 1;
+}
+
+.loan-description {
+    text-align: center;
+    max-width: 700px;
+}
+
+.loan-description ul {
+    list-style-type: disc;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .loan-consultancy-content {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        align-items: center; /* This centers items vertically in the row */
+    }
+
+    .rupee-icon {
+        font-size: 32rem; /* Reverts to the large size on desktop */
+    }
+
+    .loan-description {
+        text-align: left;
+    }
+}
+
+/* Partner Banks Original Carousel */
+.partner-banks-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+}
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    animation: scrollLogos 20s linear infinite;
+    width: 200%; /* Double the width to hold the duplicated content */
+}
+.bank-logo-box {
+    flex: 0 0 calc(20% - 1rem); /* 5 logos visible at a time */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+.bank-logo-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.bank-logo-box:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .bank-logo-box {
+        flex: 0 0 calc(10% - 1rem); /* More logos visible on desktop */
+    }
+}
+
+@keyframes scrollLogos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Why Choose Us Section */
+.why-us-card {
+    background-color: #f2f2f2;
+    color: var(--navy-blue);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-us-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive iframe */
+iframe {
+    border-radius: 0.75rem;
+}
+
+/* Fade-in animation on scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

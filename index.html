@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Consultancy Services Group</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-gray-200">
+
+    <nav class="bg-[#f0f0f0] shadow-md fixed w-full z-40">
+        <div class="container mx-auto px-6 py-4 hidden md:flex justify-between items-center relative">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                <span class="text-xl font-bold text-gray-800">Capital Consultancy</span>
+                <span class="text-xl font-bold" style="color: var(--gold);"> Services Group</span>
+            </a>
+            <a href="index.html" class="logo-desktop">
+                <img src="logo.png" alt="Company Logo" class="h-12 md:h-16">
+            </a>
+            <div class="flex items-center">
+                <a href="index.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Home</a>
+                <a href="services.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Services</a>
+                <a href="contact.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Contact</a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 py-4 flex md:hidden justify-between items-center relative">
+            <button id="hamburger-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none hamburger-icon">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 h-12">
+                <img src="logo.png" alt="Company Logo" class="h-full">
+            </a>
+        </div>
+        
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#f0f0f0] shadow-md transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center py-4">
+                <a href="index.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Home</a>
+                <a href="services.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Services</a>
+                <a href="contact.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">Your Partner In Growth</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">We provide expert consultancy in loans, real estate, and professional placements to secure your financial future.</p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">Request a Consultation</a>
+        </div>
+    </header>
+
+    <section id="services" class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16">Our Core Services</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col card-hover-effect">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">Loan Consultancy</h3>
+                    <p class="text-center text-lg mb-6 flex-grow">Our experts guide you through the complexities of obtaining personal, home, or business loans. We handle documentation, ensure seamless processing, and negotiate on your behalf to secure the most favorable terms and interest rates for your financial goals.</p>
+                    <div class="text-center mt-auto">
+                        <a href="services.html" class="text-sm font-bold text-gray-700 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col card-hover-effect">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 8h6m-3 4h.01M12 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">Real Estate Services</h3>
+                    <p class="text-center text-lg mb-6 flex-grow">From buying your first home to managing a portfolio of commercial properties, we offer comprehensive real estate solutions. Our services include property valuation, legal assistance, and strategic advice on property auctions to maximize your investment returns.</p>
+                    <div class="text-center mt-auto">
+                        <a href="services.html" class="text-sm font-bold text-gray-700 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col card-hover-effect">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM12 18h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">Placement & Manpower Solutions</h3>
+                    <p class="text-center text-lg mb-6 flex-grow">We connect talented professionals with leading MNCs and organizations. Our manpower solutions are designed to meet diverse hiring needs, from initial candidate screening and interviews to onboarding, ensuring the right fit for both the employee and the employer.</p>
+                    <div class="text-center mt-auto">
+                        <a href="services.html" class="text-sm font-bold text-gray-700 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="why-us-card card-hover-effect p-8 rounded-xl shadow-lg">
+                    <svg class="w-20 h-20 card-icon mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.181 0-6.22-.62-9-1.745M16 16v3m0 0v3m0-3h3m-3 0h-3"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Expert Network</h3>
+                    <p class="text-lg">We leverage a wide and trusted network of financial institutions, private lenders, corporate partners, and legal advisors. This extensive network allows us to provide you with exclusive opportunities and the most reliable solutions available in the market.</p>
+                </div>
+                <div class="why-us-card card-hover-effect p-8 rounded-xl shadow-lg">
+                    <svg class="w-20 h-20 card-icon mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20.25a.75.75 0 01-.75-.75L9 14.5a.75.75 0 011.5 0l.75 5a.75.75 0 01-.75.75zM12.75 14.25h1.5a.75.75 0 010 1.5h-1.5a.75.75 0 010-1.5z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Tailored Solutions</h3>
+                    <p class="text-lg">We understand that every client has unique needs. Our approach is to listen, analyze, and craft a personalized strategy specifically for you. From customized loan packages to a targeted job search, we ensure our solutions are perfectly aligned with your individual goals.</p>
+                </div>
+                <div class="why-us-card card-hover-effect p-8 rounded-xl shadow-lg">
+                    <svg class="w-20 h-20 card-icon mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 3h6m-6 3h6m-6 3h6"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Seamless Process</h3>
+                    <p class="text-lg">Our guided, step-by-step process is designed to be as smooth and stress-free as possible. With a dedicated consultant assigned to your case, you will receive constant communication, clear updates, and expert guidance at every stage, ensuring a truly seamless experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16">Client Testimonials</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover-effect">
+                    <p class="text-lg mb-6 italic">"Capital CSG helped me secure the perfect loan for my new home. Their team was professional, knowledgeable, and made the entire process so easy!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/C0C0C0/0A192F?text=J.D." alt="Client Avatar" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Jane Doe</p>
+                            <p class="text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover-effect">
+                    <p class="text-lg mb-6 italic">"The real estate team at Capital CSG was instrumental in the sale of our commercial property. Their expertise and strategic advice were invaluable."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/C0C0C0/0A192F?text=M.S." alt="Client Avatar" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Michael Smith</p>
+                            <p class="text-sm">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover-effect">
+                    <p class="text-lg mb-6 italic">"I was struggling to find a job in my field, but Capital CSG connected me with a top-tier company. I'm now in a role I love, thanks to them!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/C0C0C0/0A192F?text=L.R." alt="Client Avatar" class="rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Laura Reynolds</p>
+                            <p class="text-sm">Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f0f0f0] text-gray-600 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Capital Consultancy Services Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Consultancy Services Group - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-gray-200">
+
+    <nav class="bg-[#f0f0f0] shadow-md fixed w-full z-40">
+        <div class="container mx-auto px-6 py-4 hidden md:flex justify-between items-center relative">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                <span class="text-xl font-bold text-gray-800">Capital Consultancy</span>
+                <span class="text-xl font-bold" style="color: var(--gold);"> Services Group</span>
+            </a>
+            <a href="index.html" class="logo-desktop">
+                <img src="logo.png" alt="Company Logo" class="h-12 md:h-16">
+            </a>
+            <div class="flex items-center">
+                <a href="index.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Home</a>
+                <a href="services.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Services</a>
+                <a href="contact.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Contact</a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 py-4 flex md:hidden justify-between items-center relative">
+            <button id="hamburger-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none hamburger-icon">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 h-12">
+                <img src="logo.png" alt="Company Logo" class="h-full">
+            </a>
+        </div>
+        
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#f0f0f0] shadow-md transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center py-4">
+                <a href="index.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Home</a>
+                <a href="services.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Services</a>
+                <a href="contact.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg-services h-screen flex items-center justify-center text-center">
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">Our Services</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">Expert consultancy in loans, real estate, and professional placements to secure your financial future.</p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">Request a Consultation</a>
+        </div>
+    </header>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="loan-consultancy-heading">Loan Consultancy</h2>
+            <div class="loan-consultancy-content">
+                <div class="rupee-icon">₹</div>
+                <div class="loan-description text-white">
+                    <p>We help in securing all types of loans. These include:</p>
+                    <ul class="list-disc ml-5 mt-2">
+                        <li>Home Loans</li>
+                        <li>Personal Loans</li>
+                        <li>Business Loans</li>
+                        <li>Car Loans</li>
+                        <li>Education Loans</li>
+                        <li>Gold Loans</li>
+                        <li>Loan Against Property</li>
+                        <li>Two-wheeler Loans</li>
+                        <li>Agricultural Loans</li>
+                        <li>Microfinance Loans</li>
+                    </ul>
+                    <p class="mt-4">Our experts handle documentation, negotiation, and ensure seamless processing to secure the best terms and interest rates for your financial goals.</p>
+                </div>
+            </div>
+
+            <h3 class="partner-banks-heading">Our Partner Banks</h3>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="bank-logo-box"><img src="1.png" alt="Bank 1"></div>
+                    <div class="bank-logo-box"><img src="2.png" alt="Bank 2"></div>
+                    <div class="bank-logo-box"><img src="3.png" alt="Bank 3"></div>
+                    <div class="bank-logo-box"><img src="4.png" alt="Bank 4"></div>
+                    <div class="bank-logo-box"><img src="5.png" alt="Bank 5"></div>
+                    <div class="bank-logo-box"><img src="6.png" alt="Bank 6"></div>
+                    <div class="bank-logo-box"><img src="7.png" alt="Bank 7"></div>
+                    <div class="bank-logo-box"><img src="8.png" alt="Bank 8"></div>
+                    <div class="bank-logo-box"><img src="9.png" alt="Bank 9"></div>
+                    <div class="bank-logo-box"><img src="10.png" alt="Bank 10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16" style="color: var(--gold);">Real Estate Services</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Home/Mortgage Loan</h3>
+                    <p>We assist clients in securing home and mortgage loans, guiding them through eligibility, documentation, and negotiation to get the best possible rates for residential properties.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Land/Commercial Space Acquisition</h3>
+                    <p>Our experts help businesses and individuals acquire land or commercial spaces efficiently, providing market analysis, legal guidance, and transaction management for successful property acquisition.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4">Construction/Commercial Project Financing</h3>
+                    <p>We offer comprehensive financing solutions for construction projects and commercial developments, assisting with loan structuring, approvals, and funding to ensure smooth project execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6 text-white">
+            <h2 class="text-4xl font-bold mb-8 text-center" style="color: var(--gold);">IT Placements & Manpower Supply</h2>
+            <p class="text-lg text-center mx-auto max-w-2xl mb-12">
+                We are a trusted partner in bridging the gap between exceptional IT talent and leading organizations. Our dedicated team specializes in providing comprehensive manpower solutions tailored to the dynamic technology landscape. Whether you are a company seeking to expand your team with top-tier professionals or a candidate looking to advance your career, we offer a seamless and efficient process.
+            </p>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="p-8 rounded-xl shadow-lg bg-gray-800 hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Talent Sourcing & Screening</h3>
+                    <p class="text-lg">We meticulously vet candidates to ensure they possess the right skills, experience, and cultural fit for your organization.</p>
+                </div>
+                <div class="p-8 rounded-xl shadow-lg bg-gray-800 hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Permanent & Contract Staffing</h3>
+                    <p class="text-lg">From full-time hires to project-based contractors, we provide flexible staffing models that align with your business needs and project timelines.</p>
+                </div>
+                <div class="p-8 rounded-xl shadow-lg bg-gray-800 hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Executive Search</h3>
+                    <p class="text-lg">We identify and place high-level IT leaders who can drive innovation and strategic growth for your company.</p>
+                </div>
+                <div class="p-8 rounded-xl shadow-lg bg-gray-800 hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <h3 class="text-2xl font-bold mb-4 text-white">IT Skill Development</h3>
+                    <p class="text-lg">We offer training and upskilling programs to ensure our talent pool remains at the forefront of the latest technologies, from artificial intelligence to cloud computing.</p>
+                </div>
+            </div>
+            <p class="text-lg text-center mx-auto max-w-2xl mt-12">
+                We are committed to building long-term partnerships based on trust, integrity, and a deep understanding of the IT industry. Let us help you find the perfect match for your team or your career.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-[#f0f0f0] text-gray-600 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Capital Consultancy Services Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
