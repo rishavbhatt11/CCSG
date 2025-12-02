@@ -272,3 +272,47 @@ iframe {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+    .hero-bg h1, .hero-bg-services h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-bg p, .hero-bg-services p {
+        font-size: 1rem !important;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid {
+        gap: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    .bank-logo-box {
+        flex: 0 0 calc(33.333% - 1rem) !important;
+    }
+
+    .rupee-icon {
+        font-size: 8rem !important;
+    }
+
+    .loan-consultancy-heading {
+        font-size: 1.875rem !important;
+    }
+
+    .partner-banks-heading {
+        font-size: 1.5rem !important;
+    }
+}

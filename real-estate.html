@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services - Capital Consultancy Services Group</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-gray-200">
+
+    <nav class="bg-[#f0f0f0] shadow-md fixed w-full z-40">
+        <div class="container mx-auto px-6 py-4 hidden md:flex justify-between items-center relative">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                <span class="text-xl font-bold text-gray-800">Capital Consultancy</span>
+                <span class="text-xl font-bold" style="color: var(--gold);"> Services Group</span>
+            </a>
+            <a href="index.html" class="logo-desktop">
+                <img src="logo.png" alt="Company Logo" class="h-12 md:h-16">
+            </a>
+            <div class="flex items-center">
+                <a href="index.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Home</a>
+                <a href="about.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">About</a>
+                <a href="services.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Services</a>
+                <a href="contact.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Contact</a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 py-4 flex md:hidden justify-between items-center relative">
+            <button id="hamburger-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none hamburger-icon">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 h-12">
+                <img src="logo.png" alt="Company Logo" class="h-full">
+            </a>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#f0f0f0] shadow-md transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center py-4">
+                <a href="index.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">About</a>
+                <a href="services.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Services</a>
+                <a href="contact.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg-services h-screen flex items-center justify-center text-center">
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">Real Estate Services</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">Comprehensive property solutions to help you buy, sell, and invest with confidence.</p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">Get Started</a>
+        </div>
+    </header>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-12">Your Trusted Real Estate Partner</h2>
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-lg text-center mb-6">
+                    Whether you're buying your first home, selling a commercial property, or investing in real estate, Capital Consultancy Services Group provides expert guidance every step of the way. Our comprehensive real estate services are designed to simplify complex transactions and maximize the value of your investments.
+                </p>
+                <p class="text-lg text-center">
+                    With years of industry experience and a deep understanding of the local and national property markets, we help you make informed decisions that align with your financial goals and lifestyle aspirations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16" style="color: var(--gold);">Our Real Estate Services</h2>
+            <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16" style="color: var(--gold);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center">Home/Mortgage Loans</h3>
+                    <p class="text-gray-300 text-center">We assist clients in securing home and mortgage loans, guiding them through eligibility, documentation, and negotiation to get the best possible rates for residential properties.</p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16" style="color: var(--gold);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center">Land & Commercial Space Acquisition</h3>
+                    <p class="text-gray-300 text-center">Our experts help businesses and individuals acquire land or commercial spaces efficiently, providing market analysis, legal guidance, and transaction management for successful property acquisition.</p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-4">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-16 h-16" style="color: var(--gold);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 8h6m-6 4h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center">Construction & Project Financing</h3>
+                    <p class="text-gray-300 text-center">We offer comprehensive financing solutions for construction projects and commercial developments, assisting with loan structuring, approvals, and funding to ensure smooth project execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16">Why Choose Our Real Estate Services?</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">Expert Market Knowledge</h3>
+                            <p class="text-gray-700">Our team has in-depth knowledge of local and national property markets, ensuring you make well-informed investment decisions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">Competitive Financing</h3>
+                            <p class="text-gray-700">Access to a wide network of lenders and financial institutions ensures you get the best financing options available.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">Legal Assistance</h3>
+                            <p class="text-gray-700">We provide comprehensive legal support throughout the transaction process, ensuring all documentation is accurate and compliant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">Property Valuation</h3>
+                            <p class="text-gray-700">Accurate property valuations based on current market conditions help you negotiate the best price for your real estate transactions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">End-to-End Support</h3>
+                            <p class="text-gray-700">From initial consultation to final handover, we provide comprehensive support at every stage of your real estate journey.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover-effect">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <svg class="w-12 h-12 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3">Strategic Investment Advice</h3>
+                            <p class="text-gray-700">Receive expert guidance on property investment strategies that maximize returns and align with your long-term financial goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16" style="color: var(--gold);">Our Real Estate Process</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-gray-800 p-6 rounded-full w-28 h-28 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-5xl font-bold" style="color: var(--gold);">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Discovery</h3>
+                    <p class="text-gray-300">We understand your property requirements, budget, and investment goals through detailed consultation.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-800 p-6 rounded-full w-28 h-28 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-5xl font-bold" style="color: var(--gold);">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Research</h3>
+                    <p class="text-gray-300">Our team conducts thorough market research and property evaluation to identify the best opportunities for you.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-800 p-6 rounded-full w-28 h-28 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-5xl font-bold" style="color: var(--gold);">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Negotiation</h3>
+                    <p class="text-gray-300">We negotiate on your behalf to secure the best price and terms for your property transaction.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-800 p-6 rounded-full w-28 h-28 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-5xl font-bold" style="color: var(--gold);">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Closure</h3>
+                    <p class="text-gray-300">We handle all legal documentation and formalities to ensure a smooth and hassle-free property transfer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Make Your Real Estate Move?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Whether you're buying, selling, or investing, our real estate experts are here to guide you every step of the way.
+            </p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 inline-block">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="bg-[#f0f0f0] text-gray-600 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Capital Consultancy Services Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

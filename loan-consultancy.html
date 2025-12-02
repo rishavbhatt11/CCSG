@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Consultancy - Capital Consultancy Services Group</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-gray-200">
+
+    <nav class="bg-[#f0f0f0] shadow-md fixed w-full z-40">
+        <div class="container mx-auto px-6 py-4 hidden md:flex justify-between items-center relative">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">
+                <span class="text-xl font-bold text-gray-800">Capital Consultancy</span>
+                <span class="text-xl font-bold" style="color: var(--gold);"> Services Group</span>
+            </a>
+            <a href="index.html" class="logo-desktop">
+                <img src="logo.png" alt="Company Logo" class="h-12 md:h-16">
+            </a>
+            <div class="flex items-center">
+                <a href="index.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Home</a>
+                <a href="about.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">About</a>
+                <a href="services.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Services</a>
+                <a href="contact.html" class="mx-4 text-lg font-semibold text-gray-600 hover:text-gray-800 transition-colors duration-200 transform">Contact</a>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 py-4 flex md:hidden justify-between items-center relative">
+            <button id="hamburger-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none hamburger-icon">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 h-12">
+                <img src="logo.png" alt="Company Logo" class="h-full">
+            </a>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#f0f0f0] shadow-md transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center py-4">
+                <a href="index.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">About</a>
+                <a href="services.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Services</a>
+                <a href="contact.html" class="block py-2 px-4 text-lg font-semibold text-gray-600 hover:text-gray-800 w-full text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg-services h-screen flex items-center justify-center text-center">
+        <div class="bg-gray-900 bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">Loan Consultancy</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">Expert guidance to secure the best loan solutions tailored to your financial needs.</p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">Get Started</a>
+        </div>
+    </header>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-12">Comprehensive Loan Solutions</h2>
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-lg text-center mb-6">
+                    Navigating the loan landscape can be overwhelming, but with Capital Consultancy Services Group by your side, the process becomes simple and stress-free. We specialize in connecting you with the right financial institutions and loan products that match your unique requirements and financial goals.
+                </p>
+                <p class="text-lg text-center">
+                    Our expert consultants handle every aspect of the loan process, from initial consultation and documentation to negotiation and final approval, ensuring you receive the most favorable terms and interest rates available.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16" style="color: var(--gold);">Types of Loans We Facilitate</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Home Loans</h3>
+                    <p class="text-gray-300">Secure financing for your dream home with competitive interest rates and flexible repayment options tailored to your budget.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Personal Loans</h3>
+                    <p class="text-gray-300">Quick and hassle-free personal loans for your immediate financial needs, from medical emergencies to lifestyle expenses.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Business Loans</h3>
+                    <p class="text-gray-300">Fuel your business growth with customized business loans designed to support expansion, working capital, or equipment purchase.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Car Loans</h3>
+                    <p class="text-gray-300">Drive your dream vehicle with affordable car loans featuring low interest rates and convenient repayment schedules.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Education Loans</h3>
+                    <p class="text-gray-300">Invest in your future with education loans covering tuition, accommodation, and related expenses for domestic and international studies.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Gold Loans</h3>
+                    <p class="text-gray-300">Unlock the value of your gold assets with quick and secure gold loans at attractive interest rates.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Loan Against Property</h3>
+                    <p class="text-gray-300">Leverage your property to secure substantial funding for business or personal needs with flexible terms.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Two-wheeler Loans</h3>
+                    <p class="text-gray-300">Affordable financing options for purchasing motorcycles and scooters with minimal documentation and quick approvals.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Agricultural Loans</h3>
+                    <p class="text-gray-300">Support your farming operations with specialized agricultural loans for equipment, seeds, and working capital.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-3 text-white">Microfinance Loans</h3>
+                    <p class="text-gray-300">Small-scale financing solutions designed to support micro-enterprises and self-employment initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-16">Our Loan Process</h2>
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-4xl font-bold" style="color: var(--gold);">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consultation</h3>
+                    <p class="text-gray-700">We understand your financial needs and recommend the best loan options for your situation.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-4xl font-bold" style="color: var(--gold);">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Documentation</h3>
+                    <p class="text-gray-700">Our team assists with gathering and preparing all necessary documents, ensuring everything is in order.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-4xl font-bold" style="color: var(--gold);">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Application</h3>
+                    <p class="text-gray-700">We submit your application to our partner banks and financial institutions for approval.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <span class="text-4xl font-bold" style="color: var(--gold);">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Disbursement</h3>
+                    <p class="text-gray-700">Once approved, we facilitate the loan disbursement and ensure you receive your funds promptly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark-section fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center font-bold mb-8" style="color: var(--gold);">Our Partner Banks & Financial Institutions</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto">
+                We work with a wide network of leading banks and financial institutions to provide you with the best loan options and competitive rates.
+            </p>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="bank-logo-box"><img src="1.png" alt="Bank 1"></div>
+                    <div class="bank-logo-box"><img src="2.png" alt="Bank 2"></div>
+                    <div class="bank-logo-box"><img src="3.png" alt="Bank 3"></div>
+                    <div class="bank-logo-box"><img src="4.png" alt="Bank 4"></div>
+                    <div class="bank-logo-box"><img src="5.png" alt="Bank 5"></div>
+                    <div class="bank-logo-box"><img src="6.png" alt="Bank 6"></div>
+                    <div class="bank-logo-box"><img src="7.png" alt="Bank 7"></div>
+                    <div class="bank-logo-box"><img src="8.png" alt="Bank 8"></div>
+                    <div class="bank-logo-box"><img src="9.png" alt="Bank 9"></div>
+                    <div class="bank-logo-box"><img src="10.png" alt="Bank 10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light-section fade-in-section">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Apply for a Loan?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Get in touch with our loan experts today and take the first step towards securing your financial future.
+            </p>
+            <a href="contact.html" class="btn-primary px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 inline-block">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="bg-[#f0f0f0] text-gray-600 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Capital Consultancy Services Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
